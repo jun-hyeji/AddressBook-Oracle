@@ -75,7 +75,7 @@ public class PhoneBook {
 		catch(IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println(input);
+		System.out.println();
 	}
 	
 
