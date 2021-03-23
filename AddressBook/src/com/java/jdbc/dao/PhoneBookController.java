@@ -25,7 +25,7 @@ public class PhoneBookController {
 					}
 					continue;
 			case 3 :
-					pbView.phoneBookViewInsert();
+					pbView.phoneBookViewDel();
 					if(dao.delete(sc.nextLong())) {
 						System.out.println("[삭제되었습니다]");
 					}else {

@@ -27,7 +27,7 @@ public class PhoneBookView {
 	public void phoneBookViewInsert() {
 		System.out.println("<2.등록>");
 		System.out.println("> 이름 :");
-		System.out.println("> 이름 :");
+		System.out.println(">휴대전화 :");
 		System.out.println(">집전화 : ");
 	}
 	public void phoneBookViewDel() {

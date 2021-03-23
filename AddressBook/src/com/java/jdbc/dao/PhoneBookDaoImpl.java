@@ -66,7 +66,7 @@ public class PhoneBookDaoImpl implements PhoneBookDao{
 		try {
 			conn = getConnection();
 			String sq1 = "SELECT id, hp, tel FROM phone_book WHERE name LIKE ? ORDER BY id";
-			pstmt = conn.prepareStatement(sql);
+			pstmt = conn.prepareStatement(key);
 			pstmt.setString(1, "%"+key+"%");
 			rs = pstmt.executeQuery();
 			while(rs.next()) {
@@ -167,6 +167,12 @@ public class PhoneBookDaoImpl implements PhoneBookDao{
 		String tel = sc.next();
 		PhoneBookVO vo = new PhoneBookVO(name, hp , tel);
 		return vo;
+	}
+
+	@Override
+	public boolean update(PhoneBookVO vo) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 	
 }
