@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PhoneBookController {
 	protected void phoneBook(){
 		
-		PhonebookDao dao = new PhoneBookDaoImpl();
+		PhoneBookDao dao = new PhoneBookDaoImpl();
 		PhoneBookView pbView = new PhoneBookView();
 		
 		pbView.phoneBookViewStart();
@@ -34,7 +34,7 @@ public class PhoneBookController {
 					continue;
 			case 4 : 
 					pbView.phoneBookViewSearch();
-					dao.listView(dao.search(sc.next));
+					dao.listView(dao.search(sc.next()));
 					continue;
 			case 5 : 
 					pbView.phoneBookViewEnd();
